@@ -23,6 +23,7 @@
             box-sizing: border-box;
             background: linear-gradient(135deg, #0033a0, #ff4f4f, #f8e72b); /* Gradient background */
             color: #333;
+            min-height: 100vh; /* Ensures full height background on all screens */
         }
         header {
             background-color: rgba(0, 68, 204, 0.8); /* Semi-transparent background */
@@ -61,14 +62,22 @@
         }
         .admin-info {
             margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
             text-align: center;
         }
         .admin-info img {
-            width: 60px;
-            height: 60px;
+            width: 100px; /* Adjust size as needed */
+            height: 100px; /* Adjust size as needed */
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 10px;
+        }
+        .admin-info .fa-facebook-messenger {
+            position: absolute;
+            bottom: 5px; /* Adjust bottom spacing */
+            left: 5px; /* Adjust left spacing */
+            font-size: 24px;
+            color: #0044cc;
         }
         .admin-info h2 {
             margin: 0;
@@ -76,7 +85,6 @@
         }
         .admin-info a {
             color: #0044cc;
-            font-size: 24px;
             text-decoration: none;
         }
         .admin-info a:hover {
@@ -123,6 +131,10 @@
             .logo h1 {
                 font-size: 20px;
             }
+            .admin-info img {
+                width: 80px; /* Adjust size for smaller screens */
+                height: 80px; /* Adjust size for smaller screens */
+            }
         }
     </style>
 </head>
@@ -137,9 +149,11 @@
     <div class="container">
         <div class="main-content">
             <div class="admin-info">
-                <img src="admin.jpg" alt="Admin David"> 
+                <a href="https://m.me/j/AbaPfDIQtWvMkdRr/" target="_blank">
+                    <img src="admin.jpg" alt="Admin David"> 
+                    <i class="fab fa-facebook-messenger"></i>
+                </a>
                 <h2>DAVID MONREAL</h2>
-                <a href="https://m.me/j/AbaPfDIQtWvMkdRr/" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
             </div>
 
             <figure>
