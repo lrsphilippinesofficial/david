@@ -37,12 +37,12 @@
             justify-content: center;
         }
         .logo img {
-            height: 50px; /* Adjust size as needed */
+            height: 50px;
             margin-right: 10px;
         }
         .logo h1 {
             margin: 0;
-            font-size: 24px; /* Adjust font size as needed */
+            font-size: 24px;
         }
         .container {
             padding: 15px;
@@ -54,6 +54,18 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+        }
+        .admin-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .admin-info img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
         }
         footer {
             background-color: #333;
@@ -77,13 +89,6 @@
             margin-top: 5px;
             color: #666;
         }
-        .profile-img {
-            width: 80px; /* Adjust size as needed */
-            height: 80px; /* Adjust size as needed */
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 10px;
-        }
         @media (max-width: 768px) {
             .logo h1 {
                 font-size: 20px;
@@ -94,22 +99,21 @@
 <body>
     <header>
         <div class="logo">
-            <img src="lrs.png" alt="LRS Philippines Logo"> <!-- Replace with your logo file -->
+            <img src="lrs.png" alt="LRS Philippines Logo"> 
             <h1>LRS Philippines Official</h1>
         </div>
     </header>
 
     <div class="container">
         <div class="main-content">
-            <h2>
-                Admin David
-                <img src="admin.jpg" alt="Admin David" class="profile-img"> <!-- Replace with Admin David's image file -->
-            </h2>
-            
-            <!-- Image with Caption -->
+            <div class="admin-info">
+                <img src="admin.jpg" alt="Admin David"> 
+                <h2>Admin David</h2>
+            </div>
+
             <figure>
-                <img src="promo.jpg" alt="A descriptive alt text for the image">
-                <figcaption>A descriptive caption for the image.</figcaption>
+                <img src="promo.jpg" alt="A promotional image related to LRS Philippines">
+                <figcaption>Stay tuned for our latest updates and offers.</figcaption>
             </figure>
         </div>
     </div>
