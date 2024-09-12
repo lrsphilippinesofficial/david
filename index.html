@@ -21,8 +21,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background: url('background-image.jpg') no-repeat center center fixed; 
-            background-size: cover;
+            background: linear-gradient(135deg, #0033a0, #ff4f4f, #f8e72b); /* Gradient background */
             color: #333;
         }
         header {
@@ -50,42 +49,37 @@
         }
         .container {
             padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 80vh;
         }
         .main-content {
             max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             text-align: center;
         }
         .admin-info {
-            display: flex;
-            align-items: center;
             margin-bottom: 20px;
+            text-align: center;
         }
         .admin-info img {
             width: 60px;
             height: 60px;
             border-radius: 50%;
             object-fit: cover;
-            margin-right: 10px;
+            margin-bottom: 10px;
         }
-        .admin-info .details {
-            display: flex;
-            align-items: center;
-        }
-        .admin-info .details h2 {
+        .admin-info h2 {
             margin: 0;
-            margin-right: 10px;
             font-size: 18px;
         }
-        .admin-info .details a {
+        .admin-info a {
             color: #0044cc;
             font-size: 24px;
             text-decoration: none;
         }
-        .admin-info .details a:hover {
+        .admin-info a:hover {
             color: #0033a0;
         }
         footer {
@@ -100,15 +94,30 @@
         figure {
             margin: 0;
             text-align: center;
+            border: 5px solid #0044cc; /* Blue border for the video */
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block; /* Keeps the figure centered */
         }
         video {
             max-width: 100%;
             height: auto;
+            display: block;
         }
         figcaption {
             font-style: italic;
-            margin-top: 5px;
+            margin-top: 10px;
             color: #666;
+        }
+        .info-caption {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+        .video-link {
+            margin-top: 10px;
+            font-size: 18px;
         }
         @media (max-width: 768px) {
             .logo h1 {
@@ -129,10 +138,8 @@
         <div class="main-content">
             <div class="admin-info">
                 <img src="admin.jpg" alt="Admin David"> 
-                <div class="details">
-                    <h2>DAVID MONREAL</h2>
-                    <a href="https://m.me/j/AbaPfDIQtWvMkdRr/" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
-                </div>
+                <h2>DAVID MONREAL</h2>
+                <a href="https://m.me/j/AbaPfDIQtWvMkdRr/" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
             </div>
 
             <figure>
@@ -142,6 +149,10 @@
                 </video>
                 <figcaption>"🎉💰 Huwag palampasin ang pagkakataon! Tumaya na at baka ikaw na ang susunod na Panalo! 🚀🍀 Huwag kalimutan, bawat taya ay maaaring maging daan sa iyong pangarap! 🙌✨ #LRS #Swerte #TayaNa"</figcaption>
             </figure>
+            <div class="info-caption">For more info, visit:</div>
+            <div class="video-link">
+                <a href="https://david-monreal.github.io/LRSPhOff/" target="_blank">LRS Philippines Official</a>
+            </div>
         </div>
     </div>
 
